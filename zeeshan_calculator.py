@@ -6,7 +6,7 @@ import random
 def calculator():
 
     # Contains the current version of the calculator
-    calculator_version = "0.8"
+    calculator_version = "1.1"
 
     # Introduction to calculator
     print("Welcome to Zeeshan's Calculator!")
