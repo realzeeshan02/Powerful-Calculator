@@ -11,8 +11,8 @@ def calculator():
     # Introduction to calculator
     print("Welcome to Zeeshan's Calculator!")
     print("This is currently a work in progress.")
-    Name = input("Enter your name please:")
-    print("Hello " + Name + "!")
+    name = input("Enter your name please:")
+    print("Hello " + name + "!")
     print("I hope you enjoy using this calculator :)")
     
     # Displays options for the user
@@ -47,14 +47,14 @@ def calculator():
             print("Enter 'sin' to find sine of a number")
             print("Enter 'cos' to find cosine of a number")
             print("Enter 'tan' to find tangent of a number")
-            print("Enter 'rand' to return a random numbeer between 0 and 1")
+            print("Enter 'rand' to return a random number between 0 and 1")
             print("Enter 'randint' to return a random number between two numbers")
             continue
             
         # Displays more information for the user
         elif user_input == "info":
             print("\nInformation")
-            print("Your name is currently saved as '" + Name + "'")
+            print("Your name is currently saved as '" + name + "'")
             print("Enter 'name' to change your saved name")
             print("Enter 'options' to view options again")
             print("If an error has occurred it means you have not input the correct data type")
@@ -65,17 +65,17 @@ def calculator():
             
         # Exits the user from the calculator
         elif user_input == "quit":
-            print("\nThank you for using this calculator " + Name + "!")
+            print("\nThank you for using this calculator " + name + "!")
             break
             
         # Allows user to change their saved name
         elif user_input == "name":
             change = input("\nWould you like to change your name? Yes or No:")
             if change == "Yes":
-                Name = input("Enter your name please:")
-                print("Thank you " + Name + "!")
+                name = input("Enter your name please:")
+                print("Thank you " + name + "!")
             elif change == "No":
-                print("Okay " + Name + "!")
+                print("Okay " + name + "!")
             else:
                 print("Unknown input")    
         
@@ -151,8 +151,8 @@ def calculator():
         
         # Returns value for pi
         elif user_input == "pi":
-                result = str(math.pi)
-                print("\nThe answer is " + result)
+            result = str(math.pi)
+            print("\nThe answer is " + result)
         
         # Returns value for e
         elif user_input == "e":
@@ -211,4 +211,4 @@ def calculator():
 
 # Runs the calculator
 calculator()
-
+S
